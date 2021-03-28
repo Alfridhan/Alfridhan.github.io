@@ -7,28 +7,28 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Adam";
+  sender = "Alfridhan";
 }
 
 let footer = document.getElementById("credit");
 footer.innerHTML = sender;
-footer.href = "https://www.instagram.com/adamukti/";
+footer.href = "https://www.instagram.com/alfridhanmaulana/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo Sayangku", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
+  Swal.fire("Hallo Sayangku Tercinta", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
     Swal.fire("Jawab yang jujur ya!").then(function () {
       Swal.fire("Awas aja kalo boong!!", "", "error").then(function () {
 
         const {
           value: name
         } = Swal.fire({
-          title: 'Masukin nama kamu dulu',
+          title: 'Masukin nama kamu dulu cantik',
           input: 'text',
           inputLabel: '',
           showCancelButton: true,
           inputValidator: (value) => {
             if (!value) {
-              return 'Isi dulu dong beb'
+              return 'Isi dulu dong baby'
             } else {
               nama = value;
             }
